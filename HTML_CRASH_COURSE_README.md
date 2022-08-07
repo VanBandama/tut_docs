@@ -181,3 +181,158 @@ You can wrap link ```<a>``` tag around image:
 Effect:
 
 <a href="https://github.com/"> ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)</a>
+
+# Audio
+
+In the early 90's when internet where born, everybody wanted to share their hobbies. Show what type of music their listened to. And so HTML can play audio files from within browser. Of course assuming you uploaded audio to server (and you have every copyright to do it legally)
+
+Nevertheless if you wan reader to listen to audio track just add ```<audio src>``` tag to your website:
+
+```html
+<body>
+ <audio controls src="path/to/audio.mp3">
+</body>
+```
+```<audio controls src>``` will display primitive YT/ vimeo controls to start/stop audio, increase/decrease volume ect.
+
+You can force audio track to play autonomusly, loop or even mute it by adding:
+
+```html
+<body>
+ <audio controls autoplay loop, muted src="path/to/audio.mp3">
+</body>
+```
+If for some reason web browser can't play mp3 file. You can add alternative file with other extension:
+
+```html
+<body>
+ <audio controls autoplay loop, muted>
+ <source src = "path/to/audio.mp3">
+ <source src = "path/to/audio.wav">
+</body>
+```
+
+# Video
+
+Same goes for video playback option:
+
+```html
+<body>
+ <video controls src = "path/to/video.mp4">
+</body>
+```
+
+And you can autoplay video when someone's get into your page. Heck even loop it to troll, and muted if you want:
+
+
+```html
+<body>
+ <video controls autoplay loop muted src = "path/to/video.mp4">
+</body>
+```
+
+Also if for some reason one browser can't play mp4 then you must provide other file extensions:
+
+
+```html
+<body>
+ <video controls autoplay loop, muted>
+ <source src = "path/to/video.mp4">
+ <source src = "path/to/video.WebM">
+</body>
+```
+
+*Doc Brown here frome the future "Examples of audio and won't work on github but You have to try and play with it yourself. Trust me I'm a doctor"
+
+# Text formatting
+
+Let's back in time to 1955. Actually no. let's get back 10 minutes earlier when we talked about long blocks of text.
+You can format text if default viewing option is not for you. Displayed text can be bold, italic, it can be underlined etc.
+Here's how:
+
+```html
+<body>
+    <p>This is normal text</p> <!--- p stands for paragraph --!>
+    <p>This is <b>bold</b> text</p> <!-- b is for bold genius --!>
+    <p>This is <i>italic</i> text</p> <!-- i stands for italic genius --!>
+    <p>This is <big>big</b> text</p> <!-- it'll enlarge a bit section surrounded by that tag --!>
+    <p>This is <small>small</small> text</p> <!--pretty obvious einstein--!>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <del>deleted</del> text</p> <!-- line put through text --!>
+    <p>This is <ins>inserted</ins> text</p> <!-- it's underlined --!>
+    <p>This is <mark>marked</mark> text</p> <!-- text is marked --!>
+</body>
+```
+
+Effect:
+
+<p>This is normal text</p> <!--- p stands for paragraph --!>
+    <p>This is <b>bold</b> text</p> <!-- b is for bold genius --!>
+    <p>This is <i>italic</i> text</p> <!-- i stands for italic genius --!>
+    <p>This is <big>big</b> text</p> <!-- it'll enlarge a bit section surrounded by that tag --!>
+    <p>This is <small>small</small> text</p> <!--pretty obvious einstein--!>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <del>deleted</del> text</p> <!-- line put through text --!>
+    <p>This is <ins>inserted</ins> text</p> <!-- it's underlined --!>
+    <p>This is <mark>marked</mark> text</p> <!-- text is marked --!>
+
+*Note that big, small, marked text isn't working (again) on github 'coz it's github.
+
+# Lists
+
+There are 3 types of lists:
+
+ 1.Unordered <br>
+ 2.Ordered<br>
+ 3.Description<br>
+
+## 1.Unordered List
+
+```html
+<body>
+<p>Groceries to buy</p>
+<ul> <!-- ul stands for unordered list --!>
+<li>Tomato</li> <!-- li stands for list item --!>
+<li>Cheese</li>
+<li>Bread</li>
+<li>Ham</li>
+</ul>
+</body>
+```
+Effect:
+
+Groceries to buy<br>
+-Tomato<br>
+-Cheese<br>
+-Bread<br>
+-Ham<br>
+
+Again you can wrap ```<a>``` tag to make navigation menu for your website:
+ 
+```html
+<body>
+<p>My menu</p>
+<ul> 
+<a href:" link/to/subpage1.html"><li>Home</li></a>
+<a href:" link/to/subpage2.html"><li>Blog</li></a>
+<a href:" link/to/subpage3.html"><li>About</li></a>
+<a href:" link/to/subpage4.html"><li>Contact</li></a>
+</ul>
+</body>
+```
+
+## 2.Ordered list
+
+```html
+<body>
+<p>Groceries to buy</p>
+<ul> <!-- ul stands for unordered list --!>
+<ol>Tomato</ol> <!-- ol stands for ordered list --!>
+<li>Cheese</li>
+<li>Bread</li>
+<li>Ham</li>
+</ul>
+</body>
+```
