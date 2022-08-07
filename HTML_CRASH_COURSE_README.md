@@ -148,4 +148,36 @@ If your website have multiple sub-pages you can link to those same way:
 ```
 *Note that ```subpage2.html``` file must be a relative path to that file. Again it's up to you how you structurize your files
 
+# Graphics
+
+You can put graphics into your website. It's done via ```<img>``` tag followed by ```src``` attribute:
+
+```html
+<body>
+<img src="images/base-octocat.svg">
+</body>
+```
+
+Effect:
+
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
+Also you can explicitly tell web browser how it should be viewed. Add height and width attributes. 
+```html
+<body>
+<img src="images/base-octocat.svg" height = "300", width = "200">
+</body>
+```
+
+You can wrap link ```<a>``` tag around image:
+
+```html
+<body>
+<a href ="https://github.com/">
+<img src="images/base-octocat.svg">
+    </a>
+</body>
+```
+Effect:
+
+<a href="https://github.com/"> ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)</a>
