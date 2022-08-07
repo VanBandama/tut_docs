@@ -1,1 +1,4 @@
-# tut_docs
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
