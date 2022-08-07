@@ -328,11 +328,38 @@ Again you can wrap ```<a>``` tag to make navigation menu for your website:
 ```html
 <body>
 <p>Groceries to buy</p>
-<ul> <!-- ul stands for unordered list --!>
-<ol>Tomato</ol> <!-- ol stands for ordered list --!>
+<ol> <!-- ol stands for ordered list --!>
+<li>Tomato</ol> 
 <li>Cheese</li>
 <li>Bread</li>
 <li>Ham</li>
-</ul>
+</ol>
 </body>
 ```
+BTW. you can change viewing of order from numbers to letters:
+
+```html
+<body>
+<p>Groceries to buy</p>
+<ol type = "A"> <!-- ol stands for ordered list --!>
+<li>Tomato</ol> 
+<li>Cheese</li>
+<li>Bread</li>
+<li>Ham</li>
+</ol>
+</body>
+```
+
+## 3.Description list
+
+```html
+<dl>
+<dt>HTML</dt>
+<dd>This helps to structurize website</dd>
+<dt>CSS</dt>
+<dd>This helps to design visually website</dd>
+<dt>JavaScript</dt>
+<dd>This add interactivity to a website</dd>
+</dl>
+```
+
